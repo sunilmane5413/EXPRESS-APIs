@@ -36,7 +36,7 @@ router.get('/get/:id/:name',(req,res,next)=>{   // for multiple parameters
   res.send(req.params)
 })
 
-router.get('/jason',(req,res,next)=>{
+router.get('/jason',(req,res,next)=>{   // json data as a response
   res.json({name:'sunil',age:'12'})
 })
 
