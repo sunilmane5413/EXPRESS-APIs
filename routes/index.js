@@ -36,6 +36,10 @@ router.get('/get/:id/:name',(req,res,next)=>{   // for multiple parameters
   res.send(req.params)
 })
 
+router.get('/jason',(req,res,next)=>{
+  res.json({name:'sunil',age:'12'})
+})
+
 router.get('/get/lodash',(req,res,next)=>{   // returning aray here
   res.send(details)
 })

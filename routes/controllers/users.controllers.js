@@ -2,6 +2,8 @@ const lodash  = require("lodash");
 const { localeData } = require("moment");
 
 // externilise the module 
+// we use the contoller to write the user-controller and basiness logic we dont use utility.js 
+// and then we connects to the database and implement all the things so we use a folder name as controller 
 const details = [
     {id:1,name:'sunil',company:'patheya'},
     {id:2,name:'tany',company:'patheya'},
@@ -19,4 +21,5 @@ const details = [
    module.exports = groupUsers; 
 
   // second method is 
-  module.exports ={details,groupUsers}
+  module.exports ={details,groupUsers} // we can exports number of functions and variable in the single 
+  // line like [module.exports{..}] and import it 
